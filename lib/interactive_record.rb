@@ -17,4 +17,8 @@ def self.column_names
   table_info.map { |row| column_names << row["name"] }
   column_names.compact
 end
+
+def initialize(options ={})
+  
+end
 end
