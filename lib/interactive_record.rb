@@ -21,7 +21,6 @@ def self.column_names
 end
 
 def initialize(options={})
-  binding.pry
 
   options.each { |property, value| self.send("#{property}=", value) }
 end
