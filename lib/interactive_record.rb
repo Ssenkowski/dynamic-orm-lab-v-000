@@ -12,10 +12,5 @@ def self.column_names
 
   sql = "pragma table_info('#{table_name}')"
 
-
-  SQL
-
-  DB[:conn].execute
-
 end
 end
