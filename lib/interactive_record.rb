@@ -19,6 +19,6 @@ def self.column_names
 end
 
 def initialize(options ={})
-
+  options.each { |property, value|  }
 end
 end
