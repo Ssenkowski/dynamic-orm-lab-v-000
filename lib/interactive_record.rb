@@ -5,6 +5,7 @@ class InteractiveRecord
 
 def self.table_name
   self.to_s.downcase.pluralize
+  binding.pry
 end
 
 def self.column_names
@@ -16,7 +17,6 @@ def self.column_names
   column_names = []
   table_info.map { |row| column_names << row["name"] }
   column_names.compact
-binding.pry
 end
 
 def initialize(options ={})
