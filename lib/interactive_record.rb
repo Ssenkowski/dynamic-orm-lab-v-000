@@ -50,8 +50,10 @@ def self.find_by_name
 end
 
 def self.find_by(attribute_hash)
-  value = attribute_hash.values.first
-  binding.pry
+  
+  #value = attribute_hash.values.first
+  #formatted_value = value.class == Fixnum ? value : "'#{value}'"
+  #sql = "SELECT * FROM #{self.table_name} WHERE #{attribute_hash.keys.first} = #{formatted_value}"
 end
 
 end
