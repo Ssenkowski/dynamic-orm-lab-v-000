@@ -30,6 +30,7 @@ def save
 end
 
 def table_name_for_insert
+  binding.pry
   self.class.table_name
 end
 
