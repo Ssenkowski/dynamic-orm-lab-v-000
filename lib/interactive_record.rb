@@ -5,7 +5,6 @@ class InteractiveRecord
 
 def self.table_name
   self.to_s.downcase.pluralize
-  binding.pry
 end
 
 def self.column_names
