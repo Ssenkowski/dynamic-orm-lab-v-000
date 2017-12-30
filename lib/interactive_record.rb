@@ -18,7 +18,7 @@ def self.column_names
   column_names.compact
 end
 
-def initialize(options ={})
+def initialize(options= {})
   options.each { |property, value| self.send("#{property}=", value) }
 end
 
