@@ -25,5 +25,13 @@ def initialize(options={})
   #options.each { |property, value| self.send("#{property}=", value) }
 end
 
+def save
+  sql = "INSERT INTO #{table_name_for_insert} (#{})"
+
+end
+
+def table_name_for_insert
+  self.class.table_name
+end
 
 end
