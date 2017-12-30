@@ -8,7 +8,7 @@ def self.table_name
 end
 
 def self.column_names
-  DB[:conn].results_as_hash = true #why?
+  DB[:conn] = true #why?
 
   sql = "pragma table_info('#{table_name}')"
 
@@ -16,9 +16,10 @@ def self.column_names
   column_names = []
   table_info.map { |row| column_names << row["name"] }
   column_names.compact
+
 end
 
 def initialize(options ={})
-  
+
 end
 end
