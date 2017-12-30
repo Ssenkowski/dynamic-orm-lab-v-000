@@ -50,7 +50,8 @@ def self.find_by_name
 end
 
 def self.find_by(attribute_hash)
-
+  value = attribute_hash.values.first
+  binding.pry
 end
 
 end
