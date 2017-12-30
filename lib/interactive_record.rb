@@ -8,13 +8,14 @@ def self.table_name
 end
 
 def self.column_names
-  DB[:conn].results_as_hash = true
-  sql = <<-SQL 
-  
+  DB[:conn].results_as_hash = true #why?
 
-  SQL 
+  sql = "pragma table_info('#{table_name}')"
+
+
+  SQL
 
   DB[:conn].execute
-  
+
 end
 end
