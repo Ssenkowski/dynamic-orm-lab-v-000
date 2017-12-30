@@ -15,6 +15,6 @@ def self.column_names
   table_info = DB[:conn].execute(sql)
   column_names = []
   table_info.map { |row| column_names << row["name"] }
-
+  column_names.compact
 end
 end
